@@ -8,18 +8,17 @@
 
   <h2>Attendees (25)</h2>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <% @acceptances.each do |attend| %>
+    <li><%= attend %></li>
+    <%end%>
   </ul>
 
   <h2>Apologies (22)</h2>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <% @rejections.each do |reject| %>
+    <li><%= reject %></li>
+    <%end%>
   </ul>
-
 
 </body>
 </html>
