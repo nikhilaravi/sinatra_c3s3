@@ -37,10 +37,7 @@ get '/rsvps' do
     else 
       @rejections << rsvp[0]
       @rejection_count = @rejection_count + 1
-
-  end 
-
-
+    
 
   erb :rsvps
 end
