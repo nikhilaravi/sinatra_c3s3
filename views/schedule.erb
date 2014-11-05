@@ -11,6 +11,12 @@
       <td>8pm</td>
       <td>Doors open</td>
     </tr>
+    <% @schedule.each do |timing| %>
+    <tr>
+   	  <td><%= timing[0] %><td>
+      <td><%= timing[1] %><td>
+    </tr>
+    <% end %>  	
     <!-- etc. etc. -->
   </table>
 
