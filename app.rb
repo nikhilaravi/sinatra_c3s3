@@ -7,7 +7,7 @@ end
 
 get '/todo' do
   @todos = ['Order canapes', 'Confirm event details with attendees', 'Book band']
-
+ 
   erb :todo
 end
 
